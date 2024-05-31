@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     *{
+     margin: 0;
+     padding: 0;
+     }
+
+     .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      
+      
+     }
+
+     .card{
+    width: 100%;
+    max-width: 300px;
+    background: linear-gradient(135deg, #00feba, #5b548a); 
+    border-radius: 20px;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+     }
+
+     form input{
+        border: 0;
+        outline: none;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        margin: 0.5rem;
+        font-size: 16px;
+        box-shadow: 2px 5px;
+     }
+
+    form .display{
+        display: flex;
+        margin: 10px 0;
+     }
+
+     .display input{
+        text-align: right;
+        width: 100%;
+        background: transparent;
+        box-shadow: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+        
+        <form name="form">
+
+        <div class="display">
+        <input type="text" id="calc" name="calculation"/>
+        </div>
+
+        <hr>
+        <br>
+
+        <input type="button" value="C" onclick="form.calculation.value = ''" >
+        <input type="button" value="%" onclick="form.calculation.value += '%'" >
+        <input type="button" value="DEL" onclick="form.calculation.value = form.calculation.value.slice(0,-1)" >
+        <input type="button" value="/" onclick="form.calculation.value += '/'"/>
+        <br>
+        <input type="button" value="7" onclick="form.calculation.value += '7'"/>
+        <input type="button" value="8" onclick="form.calculation.value += '8'"/>
+        <input type="button" value="9" onclick="form.calculation.value += '9'"/>
+        <input type="button" value="X" onclick="form.calculation.value += '*'"/>
+        <br>
+        <input type="button" value="4" onclick="form.calculation.value += '4'"/>
+        <input type="button" value="5" onclick="form.calculation.value += '5'"/>
+        <input type="button" value="6" onclick="form.calculation.value += '6'"/>
+        <input type="button" value="-" onclick="form.calculation.value += '-'"/>
+        <br>
+        <input type="button" value="1" onclick="form.calculation.value += '1'"/>
+        <input type="button" value="2" onclick="form.calculation.value += '2'"/>
+        <input type="button" value="3" onclick="form.calculation.value += '3'"/>
+        <input type="button" value="+" onclick="form.calculation.value += '+'"/>
+        <br>
+        <input type="button" value="00" onclick="form.calculation.value += '00'"/>
+        <input type="button" value="0" onclick="form.calculation.value += '0'"/>
+        <input type="button" value="." onclick="form.calculation.value += '.'"/>
+        <input type="button" value="=" onclick="form.calculation.value = eval(form.calculation.value)"/>
+    
+        </form>
+       
+    </div>
+</div>
+    
+</body>
+</html>
