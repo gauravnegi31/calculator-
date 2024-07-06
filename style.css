@@ -1,0 +1,49 @@
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+ 
+ 
+}
+
+.card{
+width: 100%;
+max-width: 300px;
+background: linear-gradient(135deg, #00feba, #5b548a); 
+border-radius: 20px;
+padding: 40px 15px;
+display: flex;
+justify-content: center;
+}
+
+form input{
+   border: 0;
+   outline: none;
+   width: 3rem;
+   height: 3rem;
+   border-radius: 0.8rem;
+   cursor: pointer;
+   margin: 0.5rem;
+   font-size: 16px;
+   box-shadow: 2px 5px;
+}
+
+form .display{
+   display: flex;
+   margin: 10px 0;
+}
+
+.display input{
+   text-align: right;
+   width: 100%;
+   background: transparent;
+   box-shadow: none;
+   }
+   
